@@ -5,11 +5,10 @@ export class ListaDeNotas extends Component {
   render() {
     return (
       <ul>
-        { Array.of('Trabalho', 'Trabalho', 'Estudos').map((categoria, i) => {
+        { this.props.notas.map((nota, i) => {
           return (
             <li key={i}>
-              <div>{categoria}</div>
-              <CardNota />
+              <CardNota titulo={nota.titulo} texto={nota.texto} />
             </li>
           );
         })}
