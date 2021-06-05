@@ -1,4 +1,4 @@
-import './App.css';
+import './assets/App.css';
 import { ListaDeNotas } from './components/ListaDeNotas';
 import { FormularioCadastro } from './components/Cadastro';
 import React, { Component } from 'react';
